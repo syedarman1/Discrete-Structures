@@ -1,0 +1,43 @@
+
+Name: f0 "(p or q) and r"
+       p      q      r     f0
+0  False  False  False  False
+1  False  False   True  False
+2  False   True  False  False
+3  False   True   True   True
+4   True  False  False  False
+5   True  False   True   True
+6   True   True  False  False
+7   True   True   True   True
+Rows: 8 Cols: 4 Vars: 3 Type: Contingency
+(8, 4, 3, 'Contingency', 0    False
+1    False
+2    False
+3     True
+4    False
+5     True
+6    False
+7     True
+Name: f0, dtype: bool, '10101000', 168)
+"not(p and q)" "not p or not q" True
+"not(p and q)" "not p and not q" False
+"not (p or q)" "not p and not q" True
+"not (p and q)" "not p or not q" True
+f0_false 0000 0
+f1_nor 0001 1
+f2_converse_nonimpl 0001 1
+f3_neg_p 0011 3
+f4_nimply 0100 4
+f5_neg_q 0101 5
+f6_xor 0110 6
+f7_nand 0111 7
+f8_and 1000 8
+f9_xnor 1001 9
+f10_q 1010 10
+f11_imply 1011 11
+f12_p 1100 12
+f13_converse 1101 13
+f14_or 1110 14
+f15_true 1111 15
+
+Process finished with exit code 0
